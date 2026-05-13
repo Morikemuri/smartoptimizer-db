@@ -184,12 +184,12 @@
         "-Xmx21232M",
         "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming"
       ],
-      "reports": 8,
+      "reports": 9,
       "ai_generated": true,
       "first_seen": "2026-05-13T11:15:00.810Z",
-      "last_seen": "2026-05-13T12:18:18.155Z"
+      "last_seen": "2026-05-13T12:25:52.189Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-13T12:18:18.155Z"
+  "updated": "2026-05-13T12:25:52.189Z"
 }
