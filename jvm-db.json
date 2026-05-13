@@ -1,146 +1,189 @@
 {
-    "issues":  [
-                   {
-                       "id":  "jvm-g1gc-humongous-1",
-                       "description":  "G1GC humongous allocations cause stuttering with large texture packs",
-                       "affected_java":  [
-                                             "8",
-                                             "11",
-                                             "17"
-                                         ],
-                       "affected_flags":  [
-                                              "-XX:+UseG1GC"
-                                          ],
-                       "fix_args":  [
-                                        "-XX:G1HeapRegionSize=32M"
-                                    ],
-                       "severity":  "warn",
-                       "recommendation":  "Add -XX:G1HeapRegionSize=32M to reduce humongous allocations"
-                   },
-                   {
-                       "id":  "jvm-xmx-too-low-1",
-                       "recommendation":  "Set -Xmx to at least 4G for modded play",
-                       "affected_java":  [
-                                             "8",
-                                             "11",
-                                             "17",
-                                             "21"
-                                         ],
-                       "severity":  "severe",
-                       "fix_args":  [
-                                        "-Xmx4G",
-                                        "-Xms2G"
-                                    ],
-                       "min_xmx_mb":  2048,
-                       "description":  "Heap too small for modded Minecraft, causes frequent GC and OOM crashes",
-                       "affected_flags":  [
-
-                                          ]
-                   },
-                   {
-                       "id":  "jvm-java8-zgc-1",
-                       "description":  "ZGC is not available on Java 8, causes crash on startup",
-                       "affected_java":  [
-                                             "8"
-                                         ],
-                       "affected_flags":  [
-                                              "-XX:+UseZGC"
-                                          ],
-                       "fix_args":  [
-
-                                    ],
-                       "severity":  "fatal",
-                       "recommendation":  "Remove -XX:+UseZGC or upgrade to Java 11+"
-                   },
-                   {
-                       "id":  "jvm-tiered-compilation-1",
-                       "description":  "TieredStopAtLevel=1 disables JIT, causes severe performance degradation",
-                       "affected_java":  [
-                                             "8",
-                                             "11",
-                                             "17",
-                                             "21"
-                                         ],
-                       "affected_flags":  [
-                                              "-XX:TieredStopAtLevel=1"
-                                          ],
-                       "fix_args":  [
-
-                                    ],
-                       "severity":  "severe",
-                       "recommendation":  "Remove -XX:TieredStopAtLevel=1"
-                   },
-                   {
-                       "id":  "jvm-metaspace-1",
-                       "description":  "No MaxMetaspaceSize set, can cause unbounded memory growth with large modpacks",
-                       "affected_java":  [
-                                             "8",
-                                             "11",
-                                             "17",
-                                             "21"
-                                         ],
-                       "affected_flags":  [
-
-                                          ],
-                       "fix_args":  [
-                                        "-XX:MaxMetaspaceSize=512m"
-                                    ],
-                       "severity":  "info",
-                       "recommendation":  "Add -XX:MaxMetaspaceSize=512m"
-                   },
-                   {
-                       "id":  "jvm-serial-gc-1",
-                       "description":  "SerialGC causes major pauses and stuttering in modded Minecraft",
-                       "affected_java":  [
-                                             "8",
-                                             "11",
-                                             "17",
-                                             "21"
-                                         ],
-                       "affected_flags":  [
-                                              "-XX:+UseSerialGC"
-                                          ],
-                       "fix_args":  [
-                                        "-XX:+UseG1GC"
-                                    ],
-                       "severity":  "severe",
-                       "recommendation":  "Switch to G1GC: replace -XX:+UseSerialGC with -XX:+UseG1GC"
-                   },
-                   {
-                       "id":  "jvm-java21-shenandoah-1",
-                       "description":  "ShenandoahGC on Java 21 with Forge causes rare but reproducible crashes in rendering thread",
-                       "affected_java":  [
-                                             "21"
-                                         ],
-                       "affected_flags":  [
-                                              "-XX:+UseShenandoahGC"
-                                          ],
-                       "fix_args":  [
-                                        "-XX:+UseZGC"
-                                    ],
-                       "severity":  "warn",
-                       "recommendation":  "Switch to ZGC or G1GC on Java 21 with Forge"
-                   },
-                   {
-                       "id":  "jvm-xss-too-low-1",
-                       "description":  "Stack size too small, causes StackOverflowError in deeply nested mod code",
-                       "affected_java":  [
-                                             "8",
-                                             "11",
-                                             "17",
-                                             "21"
-                                         ],
-                       "affected_flags":  [
-                                              "-Xss256k",
-                                              "-Xss512k"
-                                          ],
-                       "fix_args":  [
-                                        "-Xss1M"
-                                    ],
-                       "severity":  "severe",
-                       "recommendation":  "Set -Xss to at least 1M"
-                   }
-               ],
-    "version":  "1.0",
-    "updated":  "2026-05-13"
+  "issues": [
+    {
+      "id": "jvm-g1gc-humongous-1",
+      "description": "G1GC humongous allocations cause stuttering with large texture packs",
+      "affected_java": [
+        "8",
+        "11",
+        "17"
+      ],
+      "affected_flags": [
+        "-XX:+UseG1GC"
+      ],
+      "fix_args": [
+        "-XX:G1HeapRegionSize=32M"
+      ],
+      "severity": "warn",
+      "recommendation": "Add -XX:G1HeapRegionSize=32M to reduce humongous allocations"
+    },
+    {
+      "id": "jvm-xmx-too-low-1",
+      "recommendation": "Set -Xmx to at least 4G for modded play",
+      "affected_java": [
+        "8",
+        "11",
+        "17",
+        "21"
+      ],
+      "severity": "severe",
+      "fix_args": [
+        "-Xmx4G",
+        "-Xms2G"
+      ],
+      "min_xmx_mb": 2048,
+      "description": "Heap too small for modded Minecraft, causes frequent GC and OOM crashes",
+      "affected_flags": []
+    },
+    {
+      "id": "jvm-java8-zgc-1",
+      "description": "ZGC is not available on Java 8, causes crash on startup",
+      "affected_java": [
+        "8"
+      ],
+      "affected_flags": [
+        "-XX:+UseZGC"
+      ],
+      "fix_args": [],
+      "severity": "fatal",
+      "recommendation": "Remove -XX:+UseZGC or upgrade to Java 11+"
+    },
+    {
+      "id": "jvm-tiered-compilation-1",
+      "description": "TieredStopAtLevel=1 disables JIT, causes severe performance degradation",
+      "affected_java": [
+        "8",
+        "11",
+        "17",
+        "21"
+      ],
+      "affected_flags": [
+        "-XX:TieredStopAtLevel=1"
+      ],
+      "fix_args": [],
+      "severity": "severe",
+      "recommendation": "Remove -XX:TieredStopAtLevel=1"
+    },
+    {
+      "id": "jvm-metaspace-1",
+      "description": "No MaxMetaspaceSize set, can cause unbounded memory growth with large modpacks",
+      "affected_java": [
+        "8",
+        "11",
+        "17",
+        "21"
+      ],
+      "affected_flags": [],
+      "fix_args": [
+        "-XX:MaxMetaspaceSize=512m"
+      ],
+      "severity": "info",
+      "recommendation": "Add -XX:MaxMetaspaceSize=512m"
+    },
+    {
+      "id": "jvm-serial-gc-1",
+      "description": "SerialGC causes major pauses and stuttering in modded Minecraft",
+      "affected_java": [
+        "8",
+        "11",
+        "17",
+        "21"
+      ],
+      "affected_flags": [
+        "-XX:+UseSerialGC"
+      ],
+      "fix_args": [
+        "-XX:+UseG1GC"
+      ],
+      "severity": "severe",
+      "recommendation": "Switch to G1GC: replace -XX:+UseSerialGC with -XX:+UseG1GC"
+    },
+    {
+      "id": "jvm-java21-shenandoah-1",
+      "description": "ShenandoahGC on Java 21 with Forge causes rare but reproducible crashes in rendering thread",
+      "affected_java": [
+        "21"
+      ],
+      "affected_flags": [
+        "-XX:+UseShenandoahGC"
+      ],
+      "fix_args": [
+        "-XX:+UseZGC"
+      ],
+      "severity": "warn",
+      "recommendation": "Switch to ZGC or G1GC on Java 21 with Forge"
+    },
+    {
+      "id": "jvm-xss-too-low-1",
+      "description": "Stack size too small, causes StackOverflowError in deeply nested mod code",
+      "affected_java": [
+        "8",
+        "11",
+        "17",
+        "21"
+      ],
+      "affected_flags": [
+        "-Xss256k",
+        "-Xss512k"
+      ],
+      "fix_args": [
+        "-Xss1M"
+      ],
+      "severity": "severe",
+      "recommendation": "Set -Xss to at least 1M"
+    },
+    {
+      "id": "jvm_crash_hs_err_pid16340_log",
+      "description": "JVM crash file detected: hs_err_pid16340.log",
+      "affected_java": [
+        "17"
+      ],
+      "affected_flags": [
+        "-Dos.name=Windows 10",
+        "-Dos.version=10.0",
+        "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
+        "-Xss1M",
+        "-Djava.library.path=C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\versions\\Cursed Walking - A Modern Zombie Apocalypse Cursed Walking-v3.2 Release\\natives",
+        "-Djna.tmpdir=C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\versions\\Cursed Walking - A Modern Zombie Apocalypse Cursed Walking-v3.2 Release\\natives",
+        "-Dorg.lwjgl.system.SharedLibraryExtractPath=C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\versions\\Cursed Walking - A Modern Zombie Apocalypse Cursed Walking-v3.2 Release\\natives",
+        "-Dio.netty.native.workdir=C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\versions\\Cursed Walking - A Modern Zombie Apocalypse Cursed Walking-v3.2 Release\\natives",
+        "-Dminecraft.launcher.brand=minecraft-launcher",
+        "-Dminecraft.launcher.version=2.3.173",
+        "-Djava.net.preferIPv6Addresses=system",
+        "-DignoreList=bootstraplauncher,securejarhandler,asm-commons,asm-util,asm-analysis,asm-tree,asm,JarJarFileSystems,client-extra,fmlcore,javafmllanguage,lowcodelanguage,mclanguage,forge-,Cursed Walking - A Modern Zombie Apocalypse Cursed Walking-v3.2 Release.jar",
+        "-DmergeModules=jna-5.10.0.jar,jna-platform-5.10.0.jar",
+        "-DlibraryDirectory=C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\libraries",
+        "--module-path=C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\libraries/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar;C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\libraries/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar;C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\libraries/org/ow2/asm/asm-commons/9.7.1/asm-commons-9.7.1.jar;C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\libraries/org/ow2/asm/asm-util/9.7.1/asm-util-9.7.1.jar;C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\libraries/org/ow2/asm/asm-analysis/9.7.1/asm-analysis-9.7.1.jar;C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\libraries/org/ow2/asm/asm-tree/9.7.1/asm-tree-9.7.1.jar;C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\libraries/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar;C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\libraries/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar",
+        "--add-modules=ALL-MODULE-PATH",
+        "--add-opens=java.base/java.util.jar=cpw.mods.securejarhandler",
+        "--add-opens=java.base/java.lang.invoke=cpw.mods.securejarhandler",
+        "--add-exports=java.base/sun.security.util=cpw.mods.securejarhandler",
+        "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming",
+        "-Xmx21232M",
+        "-XX:+UnlockExperimentalVMOptions",
+        "-XX:+UseG1GC",
+        "-XX:G1NewSizePercent=20",
+        "-XX:G1ReservePercent=20",
+        "-XX:MaxGCPauseMillis=50",
+        "-XX:G1HeapRegionSize=32M",
+        "-Dfml.ignoreInvalidMinecraftCertificates=true",
+        "-Dfml.ignorePatchDiscrepancies=true",
+        "-Djava.net.preferIPv4Stack=true",
+        "-Dminecraft.applet.TargetDirectory=C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\versions\\Cursed Walking - A Modern Zombie Apocalypse Cursed Walking-v3.2 Release",
+        "-DlibraryDirectory=C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\libraries",
+        "-Dcountry=${country}",
+        "-Dlog4j.configurationFile=C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\assets\\log_configs\\client-1.12.xml",
+        "-DLibLoader.modsFolder=C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\versions\\Cursed Walking - A Modern Zombie Apocalypse Cursed Walking-v3.2 Release\\mods"
+      ],
+      "severity": "warn",
+      "recommendation": "No recommendation available",
+      "fix_args": [],
+      "remove_args": [],
+      "reports": 1,
+      "ai_generated": false,
+      "first_seen": "2026-05-13T11:15:00.810Z"
+    }
+  ],
+  "version": "1.0",
+  "updated": "2026-05-13"
 }
