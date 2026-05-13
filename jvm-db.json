@@ -175,16 +175,21 @@
         "-Dlog4j.configurationFile=C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\assets\\log_configs\\client-1.12.xml",
         "-DLibLoader.modsFolder=C:\\Users\\Admin\\AppData\\Roaming\\.minecraft\\versions\\Cursed Walking - A Modern Zombie Apocalypse Cursed Walking-v3.2 Release\\mods"
       ],
-      "severity": "warn",
-      "recommendation": "No recommendation available",
-      "fix_args": [],
-      "remove_args": [],
-      "reports": 3,
-      "ai_generated": false,
+      "severity": "fatal",
+      "recommendation": "Reduce the heap size and try to isolate the issue",
+      "fix_args": [
+        "-Xmx2048M"
+      ],
+      "remove_args": [
+        "-Xmx21232M",
+        "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming"
+      ],
+      "reports": 4,
+      "ai_generated": true,
       "first_seen": "2026-05-13T11:15:00.810Z",
-      "last_seen": "2026-05-13T11:36:46.676Z"
+      "last_seen": "2026-05-13T11:49:16.342Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-13T11:36:53.490Z"
+  "updated": "2026-05-13T11:49:21.785Z"
 }
