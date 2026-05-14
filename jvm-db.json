@@ -243,11 +243,12 @@
         "-XX:+UseG1GC",
         "-XX:MaxGCPauseMillis=150"
       ],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": true,
-      "first_seen": "2026-05-14T13:46:04.005Z"
+      "first_seen": "2026-05-14T13:46:04.005Z",
+      "last_seen": "2026-05-14T14:46:39.099Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-13T12:33:00.346Z"
+  "updated": "2026-05-14T14:46:39.099Z"
 }
