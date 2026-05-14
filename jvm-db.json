@@ -188,6 +188,64 @@
       "ai_generated": true,
       "first_seen": "2026-05-13T11:15:00.810Z",
       "last_seen": "2026-05-13T12:33:00.346Z"
+    },
+    {
+      "id": "jvm_crash_hs_err_pid27428_log",
+      "description": "JVM crash file detected: hs_err_pid27428.log",
+      "affected_java": [
+        "21"
+      ],
+      "affected_flags": [
+        "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
+        "-Djava.library.path=C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\natives\\1.20.1-47.4.20",
+        "-Djna.tmpdir=C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\natives\\1.20.1-47.4.20",
+        "-Dorg.lwjgl.system.SharedLibraryExtractPath=C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\natives\\1.20.1-47.4.20",
+        "-Dio.netty.native.workdir=C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\natives\\1.20.1-47.4.20",
+        "-Dminecraft.launcher.brand=theseus",
+        "-Dminecraft.launcher.version=0.13.17",
+        "-Djava.net.preferIPv6Addresses=system",
+        "-DignoreList=bootstraplauncher,securejarhandler,asm-commons,asm-util,asm-analysis,asm-tree,asm,JarJarFileSystems,client-extra,fmlcore,javafmllanguage,lowcodelanguage,mclanguage,forge-,1.20.1-47.4.20.jar",
+        "-DmergeModules=jna-5.10.0.jar,jna-platform-5.10.0.jar",
+        "-DlibraryDirectory=C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\libraries",
+        "--module-path=C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\libraries/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar;C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\libraries/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar;C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\libraries/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.jar;C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\libraries/org/ow2/asm/asm-util/9.9.1/asm-util-9.9.1.jar;C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\libraries/org/ow2/asm/asm-analysis/9.9.1/asm-analysis-9.9.1.jar;C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\libraries/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.jar;C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\libraries/org/ow2/asm/asm/9.9.1/asm-9.9.1.jar;C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\libraries/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar",
+        "--add-modules=ALL-MODULE-PATH",
+        "--add-opens=java.base/java.util.jar=cpw.mods.securejarhandler",
+        "--add-opens=java.base/java.lang.invoke=cpw.mods.securejarhandler",
+        "--add-exports=java.base/sun.security.util=cpw.mods.securejarhandler",
+        "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming",
+        "-Xmx6400M",
+        "-Dlog4j.configurationFile=C:\\Users\\ak5u4\\AppData\\Roaming\\ModrinthApp\\meta\\log_configs\\client-1.12.xml",
+        "-javaagent:C:\\Users\\ak5u4\\AppData\\Local\\Temp\\.tmpc7Qztb\\theseus.jar",
+        "-Dmodrinth.internal.ipc.host=127.0.0.1",
+        "-Dmodrinth.internal.ipc.port=50577",
+        "-Dmodrinth.internal.quickPlay.serverVersion=BUILTIN",
+        "-Xms8G",
+        "-Xmx12G",
+        "-XX:+UseG1GC",
+        "-XX:+ParallelRefProcEnabled",
+        "-XX:MaxGCPauseMillis=150",
+        "-XX:+UnlockExperimentalVMOptions",
+        "-XX:+DisableExplicitGC",
+        "-XX:+AlwaysPreTouch",
+        "-XX:G1ReservePercent=20",
+        "-XX:InitiatingHeapOccupancyPercent=20",
+        "-XX:+PerfDisableSharedMem",
+        "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED"
+      ],
+      "severity": "severe",
+      "recommendation": "Reduce heap size and experiment with different GC algorithms",
+      "fix_args": [
+        "-Xmx4G",
+        "-XX:+UseConcMarkSweepGC"
+      ],
+      "remove_args": [
+        "-Xmx12G",
+        "-XX:+UseG1GC",
+        "-XX:MaxGCPauseMillis=150"
+      ],
+      "reports": 1,
+      "ai_generated": true,
+      "first_seen": "2026-05-14T13:46:04.005Z"
     }
   ],
   "version": "1.0",
