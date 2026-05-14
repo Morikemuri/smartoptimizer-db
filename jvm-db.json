@@ -299,11 +299,12 @@
       "recommendation": "No recommendation available",
       "fix_args": [],
       "remove_args": [],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": false,
-      "first_seen": "2026-05-14T15:21:58.393Z"
+      "first_seen": "2026-05-14T15:21:58.393Z",
+      "last_seen": "2026-05-14T15:25:52.908Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-14T15:10:45.572Z"
+  "updated": "2026-05-14T15:26:00.192Z"
 }
