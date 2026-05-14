@@ -308,7 +308,8 @@
       "id": "jvm_args_suboptimal",
       "description": "Recommendations triggered: intel_g1_tune,always_pre_touch",
       "affected_java": [
-        "17"
+        "17",
+        "21"
       ],
       "affected_flags": [
         "-Xmx3500M",
@@ -348,12 +349,12 @@
         "-XX:+AlwaysPreTouch"
       ],
       "remove_args": [],
-      "reports": 11,
+      "reports": 12,
       "ai_generated": true,
       "first_seen": "2026-05-14T17:20:54.041Z",
-      "last_seen": "2026-05-14T17:49:03.258Z"
+      "last_seen": "2026-05-14T18:17:23.191Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-14T17:49:03.258Z"
+  "updated": "2026-05-14T18:17:23.191Z"
 }
