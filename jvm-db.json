@@ -303,6 +303,54 @@
       "ai_generated": false,
       "first_seen": "2026-05-14T15:21:58.393Z",
       "last_seen": "2026-05-14T15:25:52.908Z"
+    },
+    {
+      "id": "jvm_args_suboptimal",
+      "description": "Recommendations triggered: intel_g1_tune,always_pre_touch",
+      "affected_java": [
+        "17"
+      ],
+      "affected_flags": [
+        "-Xmx3500M",
+        "-XX:MetaspaceSize=256M",
+        "-Duser.language=en",
+        "-Duser.country=US",
+        "-Dlog4j.configurationFile=C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\assets\\log_configs\\client-1.12.xml",
+        "-XX:+UnlockExperimentalVMOptions",
+        "-XX:+UseG1GC",
+        "-XX:G1NewSizePercent=20",
+        "-XX:G1ReservePercent=20",
+        "-XX:MaxGCPauseMillis=50",
+        "-XX:G1HeapRegionSize=32M",
+        "-Duser.language=en",
+        "-Duser.region=US",
+        "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
+        "-Djava.library.path=C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\temp\\natives-92abe36d9df544209d23182e0faafc8e",
+        "-Djna.tmpdir=C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\temp\\natives-92abe36d9df544209d23182e0faafc8e",
+        "-Dorg.lwjgl.system.SharedLibraryExtractPath=C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\temp\\natives-92abe36d9df544209d23182e0faafc8e",
+        "-Dio.netty.native.workdir=C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\temp\\natives-92abe36d9df544209d23182e0faafc8e",
+        "-Dminecraft.launcher.brand=ATLauncher",
+        "-Dminecraft.launcher.version=3.4.40.4",
+        "-Djava.net.preferIPv6Addresses=system",
+        "-DignoreList=bootstraplauncher,securejarhandler,asm-commons,asm-util,asm-analysis,asm-tree,asm,JarJarFileSystems,client-extra,fmlcore,javafmllanguage,lowcodelanguage,mclanguage,forge-,1.20.1.jar,client-1.20.1.jar",
+        "-DmergeModules=jna-5.10.0.jar,jna-platform-5.10.0.jar",
+        "-DlibraryDirectory=C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\libraries",
+        "--module-path=C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\libraries/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar;C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\libraries/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar;C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\libraries/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar;C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\libraries/org/ow2/asm/asm-util/9.8/asm-util-9.8.jar;C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\libraries/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.jar;C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\libraries/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar;C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\libraries/org/ow2/asm/asm/9.8/asm-9.8.jar;C:\\Users\\USER\\AppData\\Roaming\\ATLauncher\\libraries/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar",
+        "--add-modules=ALL-MODULE-PATH",
+        "--add-opens=java.base/java.util.jar=cpw.mods.securejarhandler",
+        "--add-opens=java.base/java.lang.invoke=cpw.mods.securejarhandler",
+        "--add-exports=java.base/sun.security.util=cpw.mods.securejarhandler",
+        "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming"
+      ],
+      "severity": "info",
+      "recommendation": "Consider adding the -XX:+AlwaysPreTouch option to reduce pause times",
+      "fix_args": [
+        "-XX:+AlwaysPreTouch"
+      ],
+      "remove_args": [],
+      "reports": 1,
+      "ai_generated": true,
+      "first_seen": "2026-05-14T17:20:54.041Z"
     }
   ],
   "version": "1.0",
