@@ -372,11 +372,12 @@
       "recommendation": "No recommendation available",
       "fix_args": [],
       "remove_args": [],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": false,
-      "first_seen": "2026-05-15T01:16:27.542Z"
+      "first_seen": "2026-05-15T01:16:27.542Z",
+      "last_seen": "2026-05-15T01:46:01.082Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-14T23:06:26.204Z"
+  "updated": "2026-05-15T01:46:06.081Z"
 }
