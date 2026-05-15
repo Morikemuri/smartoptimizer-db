@@ -353,6 +353,28 @@
       "ai_generated": true,
       "first_seen": "2026-05-14T17:20:54.041Z",
       "last_seen": "2026-05-14T23:06:26.204Z"
+    },
+    {
+      "id": "jvm_crash_hs_err_pid4424_log",
+      "description": "JVM crash file detected: hs_err_pid4424.log",
+      "affected_java": [
+        "17"
+      ],
+      "affected_flags": [
+        "-Dorg.lwjgl.opengl.Display.allowSoftwareOpenGL=true",
+        "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
+        "-Xms512m",
+        "-Xmx6128m",
+        "-Duser.language=en",
+        "-Djava.library.path=C:/Users/Administrator/AppData/Roaming/PolyMC/instances/Survival -- Mad/natives"
+      ],
+      "severity": "warn",
+      "recommendation": "No recommendation available",
+      "fix_args": [],
+      "remove_args": [],
+      "reports": 1,
+      "ai_generated": false,
+      "first_seen": "2026-05-15T01:16:27.542Z"
     }
   ],
   "version": "1.0",
