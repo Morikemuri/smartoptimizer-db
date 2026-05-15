@@ -575,11 +575,12 @@
       "recommendation": "No recommendation available",
       "fix_args": [],
       "remove_args": [],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": false,
-      "first_seen": "2026-05-15T19:00:38.506Z"
+      "first_seen": "2026-05-15T19:00:38.506Z",
+      "last_seen": "2026-05-15T19:02:46.062Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-15T18:56:11.938Z"
+  "updated": "2026-05-15T19:02:58.581Z"
 }
