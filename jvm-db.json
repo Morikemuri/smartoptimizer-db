@@ -825,11 +825,12 @@
       "recommendation": "No recommendation available",
       "fix_args": [],
       "remove_args": [],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": false,
-      "first_seen": "2026-05-16T12:16:15.331Z"
+      "first_seen": "2026-05-16T12:16:15.331Z",
+      "last_seen": "2026-05-16T12:20:51.843Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-16T12:18:34.752Z"
+  "updated": "2026-05-16T12:22:51.993Z"
 }
