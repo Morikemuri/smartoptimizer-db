@@ -650,16 +650,25 @@
         "--add-exports=java.base/sun.security.util=cpw.mods.securejarhandler",
         "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming"
       ],
-      "severity": "warn",
-      "recommendation": "No recommendation available",
-      "fix_args": [],
-      "remove_args": [],
-      "reports": 5,
-      "ai_generated": false,
+      "severity": "severe",
+      "recommendation": "Reduce the number of modules and libraries being loaded to improve performance and stability.",
+      "fix_args": [
+        "-Xmx1440M",
+        "-Xms1440M"
+      ],
+      "remove_args": [
+        "--add-exports",
+        "--add-opens",
+        "--add-modules",
+        "--module-path",
+        "-Xbootclasspath/a"
+      ],
+      "reports": 6,
+      "ai_generated": true,
       "first_seen": "2026-05-16T08:35:23.046Z",
-      "last_seen": "2026-05-16T10:44:12.572Z"
+      "last_seen": "2026-05-16T11:06:38.705Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-16T11:02:30.305Z"
+  "updated": "2026-05-16T11:06:45.819Z"
 }
