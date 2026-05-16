@@ -910,12 +910,12 @@
         "--add-opens=java.base/java.lang.invoke=cpw.mods.securejarhandler",
         "--add-exports=java.base/sun.security.util=cpw.mods.securejarhandler"
       ],
-      "reports": 6,
+      "reports": 7,
       "ai_generated": true,
       "first_seen": "2026-05-16T12:45:45.713Z",
-      "last_seen": "2026-05-16T19:25:55.918Z"
+      "last_seen": "2026-05-16T20:01:20.235Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-16T20:00:48.876Z"
+  "updated": "2026-05-16T20:01:20.235Z"
 }
