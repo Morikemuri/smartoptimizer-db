@@ -737,15 +737,22 @@
         "--add-exports=java.base/sun.security.util=cpw.mods.securejarhandler",
         "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming"
       ],
-      "severity": "warn",
-      "recommendation": "No recommendation available",
-      "fix_args": [],
-      "remove_args": [],
-      "reports": 1,
-      "ai_generated": false,
-      "first_seen": "2026-05-16T11:34:48.323Z"
+      "severity": "fatal",
+      "recommendation": "Reduce the number of --add-exports and --add-opens options to avoid potential conflicts",
+      "fix_args": [
+        "--add-exports=java.base/sun.security.util=ALL-UNNAMED"
+      ],
+      "remove_args": [
+        "--add-exports=java.base/java.util=ALL-UNNAMED",
+        "--add-exports=java.base/java.lang.reflect=ALL-UNNAMED",
+        "--add-exports=java.base/java.net=ALL-UNNAMED"
+      ],
+      "reports": 2,
+      "ai_generated": true,
+      "first_seen": "2026-05-16T11:34:48.323Z",
+      "last_seen": "2026-05-16T11:40:04.552Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-16T11:37:12.672Z"
+  "updated": "2026-05-16T11:40:12.643Z"
 }
