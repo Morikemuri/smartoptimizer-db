@@ -747,12 +747,12 @@
         "--add-exports=java.base/java.lang.reflect=ALL-UNNAMED",
         "--add-exports=java.base/java.net=ALL-UNNAMED"
       ],
-      "reports": 2,
+      "reports": 3,
       "ai_generated": true,
       "first_seen": "2026-05-16T11:34:48.323Z",
-      "last_seen": "2026-05-16T11:40:04.552Z"
+      "last_seen": "2026-05-16T11:49:22.854Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-16T11:40:12.643Z"
+  "updated": "2026-05-16T11:49:22.854Z"
 }
