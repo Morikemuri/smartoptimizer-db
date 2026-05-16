@@ -654,11 +654,12 @@
       "recommendation": "No recommendation available",
       "fix_args": [],
       "remove_args": [],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": false,
-      "first_seen": "2026-05-16T08:35:23.046Z"
+      "first_seen": "2026-05-16T08:35:23.046Z",
+      "last_seen": "2026-05-16T09:02:45.348Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-16T03:09:40.722Z"
+  "updated": "2026-05-16T09:03:05.502Z"
 }
