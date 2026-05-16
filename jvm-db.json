@@ -663,12 +663,12 @@
         "--module-path",
         "-Xbootclasspath/a"
       ],
-      "reports": 7,
+      "reports": 8,
       "ai_generated": true,
       "first_seen": "2026-05-16T08:35:23.046Z",
-      "last_seen": "2026-05-16T11:15:33.087Z"
+      "last_seen": "2026-05-16T11:22:04.280Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-16T11:15:33.087Z"
+  "updated": "2026-05-16T11:22:04.280Z"
 }
