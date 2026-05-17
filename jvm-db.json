@@ -947,6 +947,27 @@
       "ai_generated": true,
       "first_seen": "2026-05-17T07:27:23.599Z",
       "last_seen": "2026-05-17T07:35:18.414Z"
+    },
+    {
+      "id": "jvm_crash_hs_err_pid2908_log",
+      "description": "JVM crash file detected: hs_err_pid2908.log",
+      "affected_java": [
+        "17"
+      ],
+      "affected_flags": [
+        "-Duser.language=en",
+        "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
+        "-Xms512m",
+        "-Xmx8152m",
+        "-Djava.library.path=C:/NGames/PrismLauncher-Windows-MinGW-w64-Portable-10.0.5/instances/1.20.1/natives"
+      ],
+      "severity": "warn",
+      "recommendation": "No recommendation available",
+      "fix_args": [],
+      "remove_args": [],
+      "reports": 1,
+      "ai_generated": false,
+      "first_seen": "2026-05-17T08:42:26.698Z"
     }
   ],
   "version": "1.0",
