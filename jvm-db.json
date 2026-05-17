@@ -943,11 +943,12 @@
         "-XX:MaxGCPauseMillis=50",
         "-XX:G1HeapRegionSize=32M"
       ],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": true,
-      "first_seen": "2026-05-17T07:27:23.599Z"
+      "first_seen": "2026-05-17T07:27:23.599Z",
+      "last_seen": "2026-05-17T07:29:19.290Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-17T06:39:34.960Z"
+  "updated": "2026-05-17T07:29:19.290Z"
 }
