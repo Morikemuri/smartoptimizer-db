@@ -914,6 +914,38 @@
       "ai_generated": true,
       "first_seen": "2026-05-16T12:45:45.713Z",
       "last_seen": "2026-05-16T22:48:44.501Z"
+    },
+    {
+      "id": "jvm_crash_hs_err_pid23764_log",
+      "description": "JVM crash file detected: hs_err_pid23764.log",
+      "affected_java": [
+        "17"
+      ],
+      "affected_flags": [
+        "-Duser.language=en",
+        "-XX:+UseG1GC",
+        "-XX:+UnlockExperimentalVMOptions",
+        "-XX:G1NewSizePercent=20",
+        "-XX:G1ReservePercent=20",
+        "-XX:MaxGCPauseMillis=50",
+        "-XX:G1HeapRegionSize=32M",
+        "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
+        "-Xms512m",
+        "-Xmx9182m",
+        "-Djava.library.path=C:/NGames/PrismLauncher-Windows-MinGW-w64-Portable-10.0.5/instances/1.20.1/natives"
+      ],
+      "severity": "severe",
+      "recommendation": "Reduce the -Xmx value to avoid excessive heap allocation",
+      "fix_args": [
+        "-Xmx4096m"
+      ],
+      "remove_args": [
+        "-XX:MaxGCPauseMillis=50",
+        "-XX:G1HeapRegionSize=32M"
+      ],
+      "reports": 1,
+      "ai_generated": true,
+      "first_seen": "2026-05-17T07:27:23.599Z"
     }
   ],
   "version": "1.0",
