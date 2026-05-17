@@ -910,10 +910,10 @@
         "--add-opens=java.base/java.lang.invoke=cpw.mods.securejarhandler",
         "--add-exports=java.base/sun.security.util=cpw.mods.securejarhandler"
       ],
-      "reports": 10,
+      "reports": 11,
       "ai_generated": true,
       "first_seen": "2026-05-16T12:45:45.713Z",
-      "last_seen": "2026-05-16T22:48:44.501Z"
+      "last_seen": "2026-05-17T10:05:04.974Z"
     },
     {
       "id": "jvm_crash_hs_err_pid23764_log",
@@ -971,5 +971,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-17T10:03:34.935Z"
+  "updated": "2026-05-17T10:05:04.974Z"
 }
