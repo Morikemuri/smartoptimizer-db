@@ -1053,10 +1053,10 @@
         "-Xms1440M",
         "-Xmx1440M"
       ],
-      "reports": 6,
+      "reports": 7,
       "ai_generated": true,
       "first_seen": "2026-05-17T10:46:07.490Z",
-      "last_seen": "2026-05-17T13:00:29.903Z"
+      "last_seen": "2026-05-17T14:29:07.485Z"
     },
     {
       "id": "jvm_crash_hs_err_pid19160_log",
@@ -1130,5 +1130,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-17T14:00:21.754Z"
+  "updated": "2026-05-17T14:29:07.485Z"
 }
