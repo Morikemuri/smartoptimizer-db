@@ -1079,11 +1079,12 @@
       "remove_args": [
         "-Xmx9999m"
       ],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": true,
-      "first_seen": "2026-05-17T12:20:18.369Z"
+      "first_seen": "2026-05-17T12:20:18.369Z",
+      "last_seen": "2026-05-17T12:25:27.463Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-17T12:23:00.361Z"
+  "updated": "2026-05-17T12:25:27.463Z"
 }
