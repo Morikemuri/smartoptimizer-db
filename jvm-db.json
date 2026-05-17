@@ -1057,6 +1057,31 @@
       "ai_generated": true,
       "first_seen": "2026-05-17T10:46:07.490Z",
       "last_seen": "2026-05-17T11:23:58.836Z"
+    },
+    {
+      "id": "jvm_crash_hs_err_pid19160_log",
+      "description": "JVM crash file detected: hs_err_pid19160.log",
+      "affected_java": [
+        "17"
+      ],
+      "affected_flags": [
+        "-Duser.language=en",
+        "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
+        "-Xms512m",
+        "-Xmx9999m",
+        "-Djava.library.path=C:/NGames/PrismLauncher-Windows-MinGW-w64-Portable-10.0.5/instances/1.20.1/natives"
+      ],
+      "severity": "severe",
+      "recommendation": "Reduce the maximum heap size (-Xmx9999m) and monitor the JVM for memory-related issues",
+      "fix_args": [
+        "-Xmx4096m"
+      ],
+      "remove_args": [
+        "-Xmx9999m"
+      ],
+      "reports": 1,
+      "ai_generated": true,
+      "first_seen": "2026-05-17T12:20:18.369Z"
     }
   ],
   "version": "1.0",
