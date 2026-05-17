@@ -961,14 +961,18 @@
         "-Xmx8152m",
         "-Djava.library.path=C:/NGames/PrismLauncher-Windows-MinGW-w64-Portable-10.0.5/instances/1.20.1/natives"
       ],
-      "severity": "warn",
-      "recommendation": "No recommendation available",
-      "fix_args": [],
-      "remove_args": [],
-      "reports": 2,
-      "ai_generated": false,
+      "severity": "severe",
+      "recommendation": "Reduce heap size and try to reproduce the issue",
+      "fix_args": [
+        "-Xmx4096m"
+      ],
+      "remove_args": [
+        "-Xmx9499m"
+      ],
+      "reports": 3,
+      "ai_generated": true,
       "first_seen": "2026-05-17T08:42:26.698Z",
-      "last_seen": "2026-05-17T10:51:46.337Z"
+      "last_seen": "2026-05-17T11:17:13.006Z"
     },
     {
       "id": "jvm_crash_hs_err_pid28554_log",
@@ -1050,5 +1054,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-17T11:08:47.868Z"
+  "updated": "2026-05-17T11:17:16.774Z"
 }
