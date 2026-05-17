@@ -969,10 +969,10 @@
       "remove_args": [
         "-Xmx9499m"
       ],
-      "reports": 3,
+      "reports": 4,
       "ai_generated": true,
       "first_seen": "2026-05-17T08:42:26.698Z",
-      "last_seen": "2026-05-17T11:17:13.006Z"
+      "last_seen": "2026-05-17T12:04:46.089Z"
     },
     {
       "id": "jvm_crash_hs_err_pid28554_log",
@@ -1060,5 +1060,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-17T11:56:27.518Z"
+  "updated": "2026-05-17T12:04:46.089Z"
 }
