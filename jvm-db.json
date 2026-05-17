@@ -1043,16 +1043,22 @@
         "--add-exports=java.base/sun.security.util=cpw.mods.securejarhandler",
         "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming"
       ],
-      "severity": "warn",
-      "recommendation": "No recommendation available",
-      "fix_args": [],
-      "remove_args": [],
-      "reports": 2,
-      "ai_generated": false,
+      "severity": "severe",
+      "recommendation": "Reduce the amount of heap size and/or adjust the Java version to the latest one",
+      "fix_args": [
+        "-Xmx512M",
+        "-Xms256M"
+      ],
+      "remove_args": [
+        "-Xms1440M",
+        "-Xmx1440M"
+      ],
+      "reports": 3,
+      "ai_generated": true,
       "first_seen": "2026-05-17T10:46:07.490Z",
-      "last_seen": "2026-05-17T11:08:39.215Z"
+      "last_seen": "2026-05-17T11:23:58.836Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-17T11:22:55.185Z"
+  "updated": "2026-05-17T11:24:04.806Z"
 }
