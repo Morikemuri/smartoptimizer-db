@@ -965,9 +965,10 @@
       "recommendation": "No recommendation available",
       "fix_args": [],
       "remove_args": [],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": false,
-      "first_seen": "2026-05-17T08:42:26.698Z"
+      "first_seen": "2026-05-17T08:42:26.698Z",
+      "last_seen": "2026-05-17T10:51:46.337Z"
     },
     {
       "id": "jvm_crash_hs_err_pid28554_log",
@@ -1048,5 +1049,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-17T10:19:09.359Z"
+  "updated": "2026-05-17T10:51:50.444Z"
 }
