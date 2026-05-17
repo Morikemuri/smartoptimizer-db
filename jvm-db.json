@@ -1043,11 +1043,12 @@
       "recommendation": "No recommendation available",
       "fix_args": [],
       "remove_args": [],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": false,
-      "first_seen": "2026-05-17T10:46:07.490Z"
+      "first_seen": "2026-05-17T10:46:07.490Z",
+      "last_seen": "2026-05-17T11:08:39.215Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-17T10:51:50.444Z"
+  "updated": "2026-05-17T11:08:47.868Z"
 }
