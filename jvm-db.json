@@ -1368,11 +1368,12 @@
       "remove_args": [
         "-Xmx4096m"
       ],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": true,
-      "first_seen": "2026-05-19T02:22:56.335Z"
+      "first_seen": "2026-05-19T02:22:56.335Z",
+      "last_seen": "2026-05-19T02:26:56.079Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-19T01:37:52.272Z"
+  "updated": "2026-05-19T02:26:56.079Z"
 }
