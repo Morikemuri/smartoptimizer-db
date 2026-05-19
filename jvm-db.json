@@ -1415,11 +1415,12 @@
       "remove_args": [
         "-Xmx6048m"
       ],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": true,
-      "first_seen": "2026-05-19T20:16:30.416Z"
+      "first_seen": "2026-05-19T20:16:30.416Z",
+      "last_seen": "2026-05-19T20:37:36.847Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-19T20:18:09.722Z"
+  "updated": "2026-05-19T20:37:36.847Z"
 }
