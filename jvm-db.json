@@ -1372,6 +1372,52 @@
       "ai_generated": true,
       "first_seen": "2026-05-19T02:22:56.335Z",
       "last_seen": "2026-05-19T02:26:56.079Z"
+    },
+    {
+      "id": "jvm_crash_hs_err_pid5288_log",
+      "description": "JVM crash file detected: hs_err_pid5288.log",
+      "affected_java": [
+        "17"
+      ],
+      "affected_flags": [
+        "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
+        "-Xss1M",
+        "-Djava.library.path=C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\natives\\forge-47.4.10",
+        "-Djna.tmpdir=C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\natives\\forge-47.4.10",
+        "-Dorg.lwjgl.system.SharedLibraryExtractPath=C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\natives\\forge-47.4.10",
+        "-Dio.netty.native.workdir=C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\natives\\forge-47.4.10",
+        "-Dminecraft.launcher.brand=CurseForge",
+        "-Dminecraft.launcher.version=1.305.1.34041",
+        "-Djava.net.preferIPv6Addresses=system",
+        "-DignoreList=bootstraplauncher,securejarhandler,asm-commons,asm-util,asm-analysis,asm-tree,asm,JarJarFileSystems,client-extra,fmlcore,javafmllanguage,lowcodelanguage,mclanguage,forge-,forge-47.4.10.jar,forge-47.4.10",
+        "-DmergeModules=jna-5.10.0.jar,jna-platform-5.10.0.jar",
+        "-DlibraryDirectory=C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\libraries",
+        "--module-path=C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\libraries/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar;C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\libraries/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar;C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\libraries/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar;C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\libraries/org/ow2/asm/asm-util/9.8/asm-util-9.8.jar;C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\libraries/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.jar;C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\libraries/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar;C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\libraries/org/ow2/asm/asm/9.8/asm-9.8.jar;C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\libraries/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar",
+        "--add-modules=ALL-MODULE-PATH",
+        "--add-opens=java.base/java.util.jar=cpw.mods.securejarhandler",
+        "--add-opens=java.base/java.lang.invoke=cpw.mods.securejarhandler",
+        "--add-exports=java.base/sun.security.util=cpw.mods.securejarhandler",
+        "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming",
+        "-Xmx6048m",
+        "-Xms256m",
+        "-Dfml.ignorePatchDiscrepancies=true",
+        "-Dfml.ignoreInvalidMinecraftCertificates=true",
+        "-DlibraryDirectory=C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\libraries",
+        "-Duser.language=en",
+        "-DCFInstanceId=62c0f791-f606-4d09-9a57-5484a764df9b",
+        "-Dlog4j.configurationFile=C:\\Users\\dofpa\\curseforge\\minecraft\\Install\\assets\\log_configs\\client-1.12.xml"
+      ],
+      "severity": "warn",
+      "recommendation": "Reduce the maximum heap size to prevent OOM crashes",
+      "fix_args": [
+        "-Xmx4096m"
+      ],
+      "remove_args": [
+        "-Xmx6048m"
+      ],
+      "reports": 1,
+      "ai_generated": true,
+      "first_seen": "2026-05-19T20:16:30.416Z"
     }
   ],
   "version": "1.0",
