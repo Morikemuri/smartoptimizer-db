@@ -2052,11 +2052,12 @@
       "recommendation": "No recommendation available",
       "fix_args": [],
       "remove_args": [],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": false,
-      "first_seen": "2026-05-24T23:44:25.226Z"
+      "first_seen": "2026-05-24T23:44:25.226Z",
+      "last_seen": "2026-05-24T23:49:14.918Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-24T23:12:07.046Z"
+  "updated": "2026-05-24T23:49:23.276Z"
 }
