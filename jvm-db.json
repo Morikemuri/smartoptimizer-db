@@ -1368,10 +1368,10 @@
       "remove_args": [
         "-Xmx4096m"
       ],
-      "reports": 2,
+      "reports": 3,
       "ai_generated": true,
       "first_seen": "2026-05-19T02:22:56.335Z",
-      "last_seen": "2026-05-19T02:26:56.079Z"
+      "last_seen": "2026-05-24T23:59:03.950Z"
     },
     {
       "id": "jvm_crash_hs_err_pid5288_log",
@@ -2193,5 +2193,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-24T23:58:04.936Z"
+  "updated": "2026-05-24T23:59:03.950Z"
 }
