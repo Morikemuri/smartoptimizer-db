@@ -2142,9 +2142,10 @@
         "--add-exports=java.base/sun.security.util=cpw.mods.securejarhandler",
         "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming"
       ],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": true,
-      "first_seen": "2026-05-24T23:52:24.318Z"
+      "first_seen": "2026-05-24T23:52:24.318Z",
+      "last_seen": "2026-05-24T23:58:04.936Z"
     },
     {
       "id": "jvm_crash_hs_err_pid4312_log",
@@ -2192,5 +2193,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-24T23:49:23.276Z"
+  "updated": "2026-05-24T23:58:04.936Z"
 }
