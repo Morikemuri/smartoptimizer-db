@@ -1510,16 +1510,26 @@
         "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming",
         "--add-exports=cpw.mods.bootstraplauncher/cpw.mods.bootstraplauncher=ALL-UNNAMED"
       ],
-      "severity": "warn",
-      "recommendation": "No recommendation available",
-      "fix_args": [],
-      "remove_args": [],
-      "reports": 3,
-      "ai_generated": false,
+      "severity": "severe",
+      "recommendation": "Reduce the number of custom JVM arguments to a minimum, and ensure that they are correctly formatted and do not conflict with each other.",
+      "fix_args": [
+        "-Xms3621M",
+        "-Xmx3621M"
+      ],
+      "remove_args": [
+        "--add-exports=java.base/java.util=ALL-UNNAMED",
+        "--add-opens=java.base/java.util.jar=cpw.mods.securejarhandler",
+        "--add-opens=java.base/java.lang.invoke=cpw.mods.securejarhandler",
+        "--add-exports=java.base/sun.security.util=cpw.mods.securejarhandler",
+        "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming",
+        "--add-exports=cpw.mods.bootstraplauncher/cpw.mods.bootstraplauncher=ALL-UNNAMED"
+      ],
+      "reports": 4,
+      "ai_generated": true,
       "first_seen": "2026-05-23T18:46:11.355Z",
-      "last_seen": "2026-05-24T00:20:37.869Z"
+      "last_seen": "2026-05-24T00:38:56.675Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-24T00:32:37.111Z"
+  "updated": "2026-05-24T00:39:12.183Z"
 }
