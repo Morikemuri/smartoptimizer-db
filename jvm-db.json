@@ -350,10 +350,10 @@
         "-XX:+AlwaysPreTouch"
       ],
       "remove_args": [],
-      "reports": 589,
+      "reports": 590,
       "ai_generated": true,
       "first_seen": "2026-05-14T17:20:54.041Z",
-      "last_seen": "2026-05-25T16:29:57.584Z"
+      "last_seen": "2026-05-25T17:01:15.054Z"
     },
     {
       "id": "jvm_crash_hs_err_pid4424_log",
@@ -2406,5 +2406,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-25T16:29:57.584Z"
+  "updated": "2026-05-25T17:01:15.054Z"
 }
