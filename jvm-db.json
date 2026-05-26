@@ -2561,12 +2561,12 @@
       "remove_args": [
         "-XX:+UseZGC"
       ],
-      "reports": 4,
+      "reports": 5,
       "ai_generated": true,
       "first_seen": "2026-05-26T06:51:38.940Z",
-      "last_seen": "2026-05-26T07:00:56.213Z"
+      "last_seen": "2026-05-26T07:06:01.625Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-26T07:00:56.213Z"
+  "updated": "2026-05-26T07:06:01.625Z"
 }
