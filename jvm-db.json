@@ -2333,10 +2333,10 @@
         "-XX:MaxGCPauseMillis=50",
         "-XX:G1HeapRegionSize=32M"
       ],
-      "reports": 2,
+      "reports": 3,
       "ai_generated": true,
       "first_seen": "2026-05-25T05:45:24.725Z",
-      "last_seen": "2026-05-26T02:27:09.408Z"
+      "last_seen": "2026-05-26T03:08:59.657Z"
     },
     {
       "id": "jvm_crash_hs_err_pid13676_log",
@@ -2414,5 +2414,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-26T02:27:16.933Z"
+  "updated": "2026-05-26T03:08:59.657Z"
 }
