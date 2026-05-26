@@ -2593,10 +2593,10 @@
       "remove_args": [
         "-XX:+UseZGC"
       ],
-      "reports": 7,
+      "reports": 8,
       "ai_generated": true,
       "first_seen": "2026-05-26T07:12:08.685Z",
-      "last_seen": "2026-05-26T07:47:52.885Z"
+      "last_seen": "2026-05-26T07:50:59.564Z"
     },
     {
       "id": "jvm_crash_hs_err_pid31456_log",
@@ -2649,5 +2649,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-26T07:47:52.885Z"
+  "updated": "2026-05-26T07:50:59.564Z"
 }
