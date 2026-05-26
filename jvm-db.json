@@ -2565,6 +2565,37 @@
       "ai_generated": true,
       "first_seen": "2026-05-26T06:51:38.940Z",
       "last_seen": "2026-05-26T07:06:01.625Z"
+    },
+    {
+      "id": "jvm_crash_hs_err_pid3428_log",
+      "description": "JVM crash file detected: hs_err_pid3428.log",
+      "affected_java": [
+        "17"
+      ],
+      "affected_flags": [
+        "-Duser.language=en",
+        "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
+        "-Xms512m",
+        "-Xmx4096m",
+        "-XX:+ParallelRefProcEnabled",
+        "-XX:+AlwaysPreTouch",
+        "-XX:+PerfDisableSharedMem",
+        "-XX:+UseZGC",
+        "-XX:-ZUncommit",
+        "-Djava.library.path=C:/Users/krish/AppData/Roaming/ElyPrismLauncher/instances/1.20.1/natives"
+      ],
+      "severity": "severe",
+      "recommendation": "Disable ZGC and try with G1 or Concurrent Mark-and-Sweep (CMS) garbage collectors",
+      "fix_args": [
+        "-XX:+UseG1GC",
+        "-XX:+UseCMS"
+      ],
+      "remove_args": [
+        "-XX:+UseZGC"
+      ],
+      "reports": 1,
+      "ai_generated": true,
+      "first_seen": "2026-05-26T07:12:08.685Z"
     }
   ],
   "version": "1.0",
