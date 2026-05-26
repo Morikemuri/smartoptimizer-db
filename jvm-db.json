@@ -2503,11 +2503,12 @@
         "-XX:G1ReservePercent=20",
         "-XX:G1HeapRegionSize=32M"
       ],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": true,
-      "first_seen": "2026-05-26T06:43:45.172Z"
+      "first_seen": "2026-05-26T06:43:45.172Z",
+      "last_seen": "2026-05-26T06:45:00.069Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-26T06:25:18.118Z"
+  "updated": "2026-05-26T06:45:00.069Z"
 }
