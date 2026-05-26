@@ -2322,13 +2322,21 @@
         "--add-exports=java.base/sun.security.util=cpw.mods.securejarhandler",
         "--add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming"
       ],
-      "severity": "warn",
-      "recommendation": "No recommendation available",
-      "fix_args": [],
-      "remove_args": [],
-      "reports": 1,
-      "ai_generated": false,
-      "first_seen": "2026-05-25T05:45:24.725Z"
+      "severity": "severe",
+      "recommendation": "Reduce the MetaspaceSize to a more reasonable value to avoid OOM errors",
+      "fix_args": [
+        "-XX:MetaspaceSize=64M"
+      ],
+      "remove_args": [
+        "-XX:G1NewSizePercent=20",
+        "-XX:G1ReservePercent=20",
+        "-XX:MaxGCPauseMillis=50",
+        "-XX:G1HeapRegionSize=32M"
+      ],
+      "reports": 2,
+      "ai_generated": true,
+      "first_seen": "2026-05-25T05:45:24.725Z",
+      "last_seen": "2026-05-26T02:27:09.408Z"
     },
     {
       "id": "jvm_crash_hs_err_pid13676_log",
@@ -2406,5 +2414,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-26T01:40:20.617Z"
+  "updated": "2026-05-26T02:27:16.933Z"
 }
