@@ -2593,12 +2593,12 @@
       "remove_args": [
         "-XX:+UseZGC"
       ],
-      "reports": 2,
+      "reports": 3,
       "ai_generated": true,
       "first_seen": "2026-05-26T07:12:08.685Z",
-      "last_seen": "2026-05-26T07:17:39.300Z"
+      "last_seen": "2026-05-26T07:22:27.634Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-26T07:17:39.300Z"
+  "updated": "2026-05-26T07:22:27.634Z"
 }
