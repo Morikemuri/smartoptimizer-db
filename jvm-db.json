@@ -2507,6 +2507,32 @@
       "ai_generated": true,
       "first_seen": "2026-05-26T06:43:45.172Z",
       "last_seen": "2026-05-26T06:45:00.069Z"
+    },
+    {
+      "id": "jvm_crash_hs_err_pid9640_log",
+      "description": "JVM crash file detected: hs_err_pid9640.log",
+      "affected_java": [
+        "17"
+      ],
+      "affected_flags": [
+        "-Duser.language=en",
+        "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
+        "-Xms512m",
+        "-Xmx4096m",
+        "-XX:+ParallelRefProcEnabled",
+        "-XX:+AlwaysPreTouch",
+        "-XX:+PerfDisableSharedMem",
+        "-XX:+UseZGC",
+        "-XX:-ZUncommit",
+        "-Djava.library.path=C:/Users/krish/AppData/Roaming/ElyPrismLauncher/instances/1.20.1/natives"
+      ],
+      "severity": "warn",
+      "recommendation": "No recommendation available",
+      "fix_args": [],
+      "remove_args": [],
+      "reports": 1,
+      "ai_generated": false,
+      "first_seen": "2026-05-26T06:49:02.485Z"
     }
   ],
   "version": "1.0",
