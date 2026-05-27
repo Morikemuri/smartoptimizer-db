@@ -2979,12 +2979,12 @@
       "remove_args": [
         "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump"
       ],
-      "reports": 9,
+      "reports": 10,
       "ai_generated": true,
       "first_seen": "2026-05-27T13:26:52.699Z",
-      "last_seen": "2026-05-27T18:15:22.491Z"
+      "last_seen": "2026-05-27T19:31:43.479Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-27T18:55:41.078Z"
+  "updated": "2026-05-27T19:31:43.479Z"
 }
