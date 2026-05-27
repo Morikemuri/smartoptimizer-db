@@ -1415,10 +1415,10 @@
       "remove_args": [
         "-Xmx6048m"
       ],
-      "reports": 7,
+      "reports": 8,
       "ai_generated": true,
       "first_seen": "2026-05-19T20:16:30.416Z",
-      "last_seen": "2026-05-27T04:14:21.314Z"
+      "last_seen": "2026-05-27T05:11:14.135Z"
     },
     {
       "id": "jvm_crash_hs_err_pid8971_log",
@@ -2937,5 +2937,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-27T05:02:50.925Z"
+  "updated": "2026-05-27T05:11:14.135Z"
 }
