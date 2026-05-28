@@ -3032,11 +3032,12 @@
         "--add-opens",
         "--add-exports"
       ],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": true,
-      "first_seen": "2026-05-28T17:46:32.220Z"
+      "first_seen": "2026-05-28T17:46:32.220Z",
+      "last_seen": "2026-05-28T17:49:48.634Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-28T17:35:12.257Z"
+  "updated": "2026-05-28T17:49:48.634Z"
 }
