@@ -3087,12 +3087,12 @@
         "-Xms512m",
         "-Xmx6656m"
       ],
-      "reports": 2,
+      "reports": 3,
       "ai_generated": true,
       "first_seen": "2026-05-29T15:53:02.713Z",
-      "last_seen": "2026-05-29T16:35:41.096Z"
+      "last_seen": "2026-05-29T19:23:23.242Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-29T18:09:09.960Z"
+  "updated": "2026-05-29T19:23:23.242Z"
 }
