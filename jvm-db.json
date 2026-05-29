@@ -3061,6 +3061,27 @@
       "reports": 1,
       "ai_generated": true,
       "first_seen": "2026-05-29T15:18:12.404Z"
+    },
+    {
+      "id": "jvm_crash_hs_err_pid30224_log",
+      "description": "JVM crash file detected: hs_err_pid30224.log",
+      "affected_java": [
+        "17"
+      ],
+      "affected_flags": [
+        "-Duser.language=en",
+        "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
+        "-Xms512m",
+        "-Xmx6656m",
+        "-Djava.library.path=C:/Users/ksnsk/AppData/Roaming/PrismLauncher/instances/old phay/natives"
+      ],
+      "severity": "warn",
+      "recommendation": "No recommendation available",
+      "fix_args": [],
+      "remove_args": [],
+      "reports": 1,
+      "ai_generated": false,
+      "first_seen": "2026-05-29T15:53:02.713Z"
     }
   ],
   "version": "1.0",
