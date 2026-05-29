@@ -3133,11 +3133,12 @@
       "recommendation": "No recommendation available",
       "fix_args": [],
       "remove_args": [],
-      "reports": 1,
+      "reports": 2,
       "ai_generated": false,
-      "first_seen": "2026-05-29T23:39:26.485Z"
+      "first_seen": "2026-05-29T23:39:26.485Z",
+      "last_seen": "2026-05-29T23:40:38.646Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-29T22:37:48.106Z"
+  "updated": "2026-05-29T23:40:44.499Z"
 }
