@@ -3076,15 +3076,22 @@
         "-Xmx6656m",
         "-Djava.library.path=C:/Users/ksnsk/AppData/Roaming/PrismLauncher/instances/old phay/natives"
       ],
-      "severity": "warn",
-      "recommendation": "No recommendation available",
-      "fix_args": [],
-      "remove_args": [],
-      "reports": 1,
-      "ai_generated": false,
-      "first_seen": "2026-05-29T15:53:02.713Z"
+      "severity": "severe",
+      "recommendation": "Try increasing the heap size or reducing the amount of memory used by the game",
+      "fix_args": [
+        "-Xmx8192m",
+        "-Xms1024m"
+      ],
+      "remove_args": [
+        "-Xms512m",
+        "-Xmx6656m"
+      ],
+      "reports": 2,
+      "ai_generated": true,
+      "first_seen": "2026-05-29T15:53:02.713Z",
+      "last_seen": "2026-05-29T16:35:41.096Z"
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-29T16:34:36.210Z"
+  "updated": "2026-05-29T16:35:46.265Z"
 }
