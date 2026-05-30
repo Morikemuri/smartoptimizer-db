@@ -3248,5 +3248,16 @@
     "reports": 1,
     "first_seen": "2026-05-30T12:30:36.022Z",
     "last_seen": "2026-05-30T12:30:36.022Z"
+  },
+  "jvm_args_suboptimal_17": {
+    "crash_type": "jvm_args_suboptimal",
+    "java_version": "17",
+    "severity": "info",
+    "recommendation": "No specific recommendation available",
+    "fix_args": [],
+    "remove_args": [],
+    "reports": 1,
+    "first_seen": "2026-05-30T12:35:51.693Z",
+    "last_seen": "2026-05-30T12:35:51.693Z"
   }
 }
