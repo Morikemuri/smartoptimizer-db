@@ -3270,5 +3270,16 @@
     "reports": 3,
     "first_seen": "2026-05-30T12:50:23.586Z",
     "last_seen": "2026-05-30T16:26:54.408Z"
+  },
+  "jvm_crash_hs_err_pid40020_log_17": {
+    "crash_type": "jvm_crash_hs_err_pid40020_log",
+    "java_version": "17",
+    "severity": "info",
+    "recommendation": "No specific recommendation available",
+    "fix_args": [],
+    "remove_args": [],
+    "reports": 1,
+    "first_seen": "2026-05-30T17:11:35.745Z",
+    "last_seen": "2026-05-30T17:11:35.745Z"
   }
 }
