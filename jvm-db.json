@@ -3088,10 +3088,10 @@
         "-Xms512m",
         "-Xmx6656m"
       ],
-      "reports": 3,
+      "reports": 4,
       "ai_generated": true,
       "first_seen": "2026-05-29T15:53:02.713Z",
-      "last_seen": "2026-05-29T19:23:23.242Z"
+      "last_seen": "2026-05-30T04:00:18.534Z"
     },
     {
       "id": "jvm_crash_hs_err_pid31116_log",
@@ -3188,5 +3188,5 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-30T03:54:27.004Z"
+  "updated": "2026-05-30T04:00:18.534Z"
 }
