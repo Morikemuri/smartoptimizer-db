@@ -3237,5 +3237,16 @@
     }
   ],
   "version": "1.0",
-  "updated": "2026-05-30T12:12:21.405Z"
+  "updated": "2026-05-30T12:12:21.405Z",
+  "jvm_crash_hs_err_pid313_log_21": {
+    "crash_type": "jvm_crash_hs_err_pid313_log",
+    "java_version": "21",
+    "severity": "info",
+    "recommendation": "No specific recommendation available",
+    "fix_args": [],
+    "remove_args": [],
+    "reports": 1,
+    "first_seen": "2026-05-30T12:30:36.022Z",
+    "last_seen": "2026-05-30T12:30:36.022Z"
+  }
 }
