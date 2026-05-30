@@ -3256,9 +3256,9 @@
     "recommendation": "No specific recommendation available",
     "fix_args": [],
     "remove_args": [],
-    "reports": 28,
+    "reports": 29,
     "first_seen": "2026-05-30T12:35:51.693Z",
-    "last_seen": "2026-05-30T20:49:57.449Z"
+    "last_seen": "2026-05-30T20:58:02.670Z"
   },
   "jvm_crash_hs_err_pid30224_log_17": {
     "crash_type": "jvm_crash_hs_err_pid30224_log",
